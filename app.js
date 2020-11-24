@@ -1,13 +1,10 @@
-// Movement animation to happen
 const iPhone = document.querySelector('.iPhone');
 const container = document.querySelector('.container');
-
-//items
 const dunkinLogo = document.querySelector('.dunkinLogo');
 const donuts = document.querySelector('.donuts');
 const content = document.querySelector('.content h3');
 
-// Moving Animation Event
+// Mouse move over
 container.addEventListener('mousemove', (e) => {
     let xAxis = (window.innerWidth / 2 - e.pageX) / 10;
     let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
@@ -15,7 +12,7 @@ container.addEventListener('mousemove', (e) => {
 });
 
 
-// // animate in
+// mouse enter
 container.addEventListener('mouseenter', e => {
     iPhone.style.transition = 'none';
     dunkinLogo.style.transform = 'translateZ(150px) rotateZ(-45deg)';
@@ -23,7 +20,7 @@ container.addEventListener('mouseenter', e => {
     content.style.transform = 'translateZ(140px)';
 });
 
-// //animate out
+// mouse leave
 container.addEventListener('mouseleave', e => {
     iPhone.style.transition = "all 0.5s ease";
     iPhone.style.transform = `rotateY(0deg) rotateX(0deg)`;
