@@ -15,9 +15,9 @@ container.addEventListener('mousemove', (e) => {
 // mouse enter
 container.addEventListener('mouseenter', e => {
     iPhone.style.transition = 'none';
-    dunkinLogo.style.transform = 'translateZ(150px) rotateZ(-45deg)';
-    donuts.style.transform = 'translateZ(150px)';
-    content.style.transform = 'translateZ(140px)';
+    dunkinLogo.style.transform = 'translateZ(100px) rotateZ(-45deg)';
+    donuts.style.transform = 'translateZ(100px)';
+    content.style.transform = 'translateZ(100px)';
 });
 
 // mouse leave
